@@ -1,0 +1,8 @@
+streamlit 
+requests
+PyPDF2
+langchain==0.0.96
+gpt_index==0.4.15
+chromadb
+python-dotenv
+openai
