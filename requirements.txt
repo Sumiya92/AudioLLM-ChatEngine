@@ -6,3 +6,4 @@ gpt_index==0.4.15
 chromadb
 python-dotenv
 openai
+pathlib
