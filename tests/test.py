@@ -49,7 +49,7 @@ st.title("Chat with Your Audio using LLM")
 
 input_source = st.text_input("Enter the YouTube video URL")
 
-if input_source is not None:
+if input_source:
     col1, col2 = st.columns(2)
 
     with col1:
@@ -59,7 +59,7 @@ if input_source is not None:
     with col2:
         st.info("Chat Below")
         query = st.text_area("Ask your Query here...")
-        if query is not None:
+        if query:
             if st.button("Ask"):
                 st.info("Your Query is: " + query)
                 lemur_output = post_lemur(transcript_id, query)
