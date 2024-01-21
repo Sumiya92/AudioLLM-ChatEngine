@@ -65,7 +65,7 @@ def assemblyai_stt(audio_filename):
             print("Processing...")
             time.sleep(3)
     print(transcription_result['text'])
-    file = open('docs/transcription.txt', 'w')
+    file = open('data/transcription.txt', 'w')
     file.write(transcription_result['text'])
     file.close()
     return transcription_result['text']
